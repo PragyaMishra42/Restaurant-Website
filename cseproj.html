@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Menu</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f7;
+      color: #333;
+    }
+
+    header {
+      background-color: #311d02;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    main {
+      padding: 1rem;
+    }
+
+    #menu {
+      margin: 1rem auto;
+      max-width: 800px;
+      background-color: rgb(146, 125, 88);
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 1rem;
+    }
+
+    #menu h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+      color: rgb(245, 245, 245);
+    }
+
+    .menu-category {
+      margin-bottom: 1.5rem;
+    }
+
+    .menu-category h3 {
+      color: #5a1f14;
+      border-bottom: 2px solid #3e0f07;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .menu-item {
+      padding: 1rem 0;
+      border-bottom: 1px solid #7e3737;
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .menu-item img {
+      width: 100px;
+      height: 100px;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    .menu-item h4 {
+      margin-bottom: 0.3rem;
+      color: #e0e3d8;
+    }
+
+    .menu-item p {
+      color: #290606;
+      margin: 0.2rem 0;
+    }
+
+    footer {
+      background-color: #311d02;
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem 1rem;
+      margin-top: 2rem;
+    }
+
+    footer .social-icons a {
+      color: #fff;
+      margin: 0 0.5rem;
+      font-size: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Kake Da Hotel</h1>
+    <p>Explore our menu and enjoy a wonderful meal!</p>
+  </header>
+
+  <main>
+    <section id="menu">
+      <h2>Our Menu</h2>
+
+      <!-- Starters -->
+      <div class="menu-category">
+        <h3>Starters</h3>
+        <div class="menu-item">
+          <img src="garlicbread.jpg" alt="Garlic Bread">
+          <div>
+            <h4>Garlic Bread</h4>
+            <p>$5.00</p>
+            <p>Delicious garlic-flavored bread with herbs.</p>
+            <p><strong>Recipe:</strong> Baguette with butter, garlic, and parsley, toasted to perfection.</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="tomatosoup.webp" alt="Tomato Soup">
+          <div>
+            <h4>Tomato Soup</h4>
+            <p>$4.00</p>
+            <p>A warm and hearty tomato-based soup.</p>
+            <p><strong>Recipe:</strong> Fresh tomatoes, basil, and garlic, with a hint of cream for richness.</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="Spring roll.jpg" alt="Spring Rolls">
+          <div>
+            <h4>Spring Rolls</h4>
+            <p>$6.00</p>
+            <p>Crispy rolls filled with fresh vegetables.</p>
+            <p><strong>Recipe:</strong> Cabbage, carrots, and bell peppers in a crunchy shell.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Course -->
+      <div class="menu-category">
+        <h3>Main Course</h3>
+        <div class="menu-item">
+          <img src="grilledchicken.jpg" alt="Grilled Chicken">
+          <div>
+            <h4>Grilled Chicken</h4>
+            <p>$12.00</p>
+            <p>Juicy grilled chicken with spices.</p>
+            <p><strong>Recipe:</strong> Marinated in herbs, grilled for a smoky flavor.</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="vegPasta.jpg" alt="Vegetable Pasta">
+          <div>
+            <h4>Vegetable Pasta</h4>
+            <p>$10.00</p>
+            <p>Fresh pasta with seasonal vegetables.</p>
+            <p><strong>Recipe:</strong> Garlic, olive oil, and seasonal veggies tossed with pasta.</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="Paneer butter masala.jpg" alt="Paneer Butter Masala">
+          <div>
+            <h4>Paneer Butter Masala</h4>
+            <p>$11.00</p>
+            <p>A creamy, rich curry made with cottage cheese in a tomato-based sauce.</p>
+            <p><strong>Recipe:</strong>Soft paneer cubes cooked in a luscious blend of tomatoes, cream and butter, spiced with garam masala, ginger, and garlic. Perfect with naan or rice.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Desserts -->
+      <div class="menu-category">
+        <h3>Desserts</h3>
+        <div class="menu-item">
+          <img src="Chocolate cake.jpg" alt="Chocolate Cake">
+          <div>
+            <h4>Chocolate Cake</h4>
+            <p>$6.00</p>
+            <p>Rich and creamy chocolate cake.</p>
+            <p><strong>Recipe:</strong> Moist chocolate sponge with chocolate frosting.</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="ice cream.jpg" alt="Ice Cream Sundae">
+          <div>
+            <h4>Ice Cream Sundae</h4>
+            <p>$5.00</p>
+            <p>Vanilla ice cream with toppings.</p>
+            <p><strong>Recipe:</strong> Vanilla scoops with chocolate sauce, nuts, and cherry.</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="cheesecake." alt="Cheesecake">
+          <div>
+            <h4>Cheesecake</h4>
+            <p>$7.00</p>
+            <p>Classic creamy cheesecake with a graham cracker crust.</p>
+            <p><strong>Recipe:</strong> Cream cheese, sugar, eggs, on a graham cracker crust.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Kake Da Hotel. All rights reserved.</p>
+    <p>Food Court, Jalandhar, Punjab</p>
+    <p>Contact us: +911234567892 | <a href="mailto:info@kakedahotel.com">info@kakedahotel.com</a></p>
+    
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank">Facebook</a>
+      <a href="https://twitter.com" target="_blank">Twitter</a>
+      <a href="https://instagram.com" target="_blank">Instagram</a>
+    </div>
+  </footer>
+
+  <script>
+    // Example: Displaying a welcome message in console
+    window.addEventListener('load', () => {
+      console.log('Welcome to Kake Da Hotel!');
+    });
+  </script>
+</body>
+</html>
